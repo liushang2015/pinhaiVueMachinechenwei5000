@@ -42,10 +42,6 @@ table .el-button--small.icon-btn i{
 .el-dialog__body .el-select,.el-dialog__body .el-date-editor.el-input{
     width: 100%;
 }
-.dialog-footer{
-    display: flex;
-    align-items:center
-}
 .el-pagination{
     text-align: right;
     margin-top: 10px;

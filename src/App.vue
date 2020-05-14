@@ -135,7 +135,7 @@
                 </el-pagination>
             </div>
         </div>
-        <el-dialog :visible.sync="dialogFormVisible" width="600px">
+        <el-dialog :visible.sync="dialogFormVisible" width="600px" center>
             <el-form :model="form" label-width="120px" :rules="rules" ref="form">
                 <el-row>
                     <el-col :span="18">
