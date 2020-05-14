@@ -60,6 +60,7 @@
                     </el-button>
                 </div>
                 <el-table
+                        height="600"
                         :data="tableData"
                         stripe
                         border
