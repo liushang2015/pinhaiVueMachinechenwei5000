@@ -1,0 +1,52 @@
+.box {
+    background-color: #fff;
+    padding: 15px 10px;
+    width: 1200px;
+}
+
+.table {
+
+}
+
+.table .title {
+    display: flex;
+    align-items: flex-start;
+    background-color: #e0e6ec;
+    padding: 10px;
+}
+
+.search {
+
+}
+
+.el-table td, .el-table th {
+    padding: 4px 0;
+}
+table .el-button--small.icon-btn{
+    border-radius: 50%;
+    padding: 5px;
+    height: 34px;
+    width: 34px;
+
+}
+table .el-button--small.icon-btn i{
+    font-size: 20px;
+}
+.el-form-item{
+    display: flex;
+}
+.el-dialog__body .el-form-item__content, .search .el-form-item .el-form-item__content{
+    margin-left: 0 !important;
+    width: 100%;
+}
+.el-dialog__body .el-select,.el-dialog__body .el-date-editor.el-input{
+    width: 100%;
+}
+.dialog-footer{
+    display: flex;
+    align-items:center
+}
+.el-pagination{
+    text-align: right;
+    margin-top: 10px;
+}
