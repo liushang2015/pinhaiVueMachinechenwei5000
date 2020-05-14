@@ -324,8 +324,18 @@
                     type: 'success'
                 });
             },
-            // 批量删除
+            // 批量删除验证
             removeBatch() {
+                if(this.checkArr.length < 1) {
+                    this.$message({
+                        type: 'warning',
+                        message: '请选择删除数据'
+                    });
+                }
+                this.removeOpen(undefined, 'batch')
+            },
+            //批量删除
+            removeList(){
                 let arr = _.cloneDeep(this.data)
                 _.forEach(this.checkArr, item => {
                     let index = _.findIndex(arr, {id: item.id})
@@ -338,13 +348,17 @@
                     this.getInfo(this.currentPage - 1)
                 }
             },
-            removeOpen(row) {
+            removeOpen(row, type) {
                 this.$confirm('请确认是否删除', {
                     cancelButtonText: '否',
                     confirmButtonText: '是',
                     center: true
                 }).then(() => {
-                    this.remove(row)
+                    if(type === 'batch'){
+                        this.removeList()
+                    }else{
+                        this.remove(row)
+                    }
 
                 }).catch(() => {
                     this.$message({
