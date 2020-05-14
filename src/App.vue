@@ -332,6 +332,7 @@
                         type: 'warning',
                         message: '请选择删除数据'
                     });
+                    return
                 }
                 this.removeOpen(undefined, 'batch')
             },
